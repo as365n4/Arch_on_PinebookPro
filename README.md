@@ -142,12 +142,12 @@ Now eject the eMMC module and install on Pinebook Pro computer board.
 
 `iwctl`					bash changes to iwd interactive prompt
 
-	station wlan0 scan				        scans for wireless networks
+	station wlan0 scan				  scans for wireless networks
 	station wlan0 get-networks			  shows all available wireless networks
 	station wlan0 connect SSID			  connects to specified network, may ask for passphrase
-	station wlan0 show				        check connection status of wireless network
+	station wlan0 show				  check connection status of wireless network
 
-    quit					                    reverts back to bash
+    quit					          reverts back to bash
 	
 `nano /etc/resolv.conf`				should be nameserver 192.168.1.xxx
 
@@ -157,10 +157,10 @@ Now eject the eMMC module and install on Pinebook Pro computer board.
 
 	sudo mkdir /etc/pacman.d/hooks
 	sudo rm -rf /etc/lsb-release 
-	sudo pacman-key --init			                          reinitiate the keyring
+	sudo pacman-key --init			                    reinitiate the keyring
 	sudo pacman-key --populate archlinuxarm		            and install ALARM package signing keys
-	sudo pacman -Sy				                                sync the local repo’s
-	sudo pacman -S linux-pbp			                        replace the Manjaro Kernel with Nadia Holmquists’s Kernel
+	sudo pacman -Sy				                    sync the local repo’s
+	sudo pacman -S linux-pbp			            replace the Manjaro Kernel with Nadia Holmquists’s Kernel
 	sudo pacman -Syuu
 
 	sudo reboot
@@ -173,7 +173,7 @@ Now eject the eMMC module and install on Pinebook Pro computer board.
 #### 8.)  Install Wayland Display Server and Gnome Desktop Environment
 
 	sudo pacman -S wayland
-	sudo pacman -S gnome			                            select → ALL (just press ENTER), then select → 1 & 1
+	sudo pacman -S gnome			                    select → ALL (just press ENTER), then select → 1 & 1
 	sudo systemctl enable gdm.service
 	sudo systemctl start gdm.service
 
