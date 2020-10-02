@@ -1,0 +1,7 @@
+#
+# Arch Linux Arm repository mirrorlist
+# Generated on 2020-04-30
+#
+
+## Geo-IP based mirror selection and load balancing
+Server = http://mirror.archlinuxarm.org/$arch/$repo
