@@ -157,10 +157,10 @@ Now eject the eMMC module and install on Pinebook Pro computer board.
 
 	sudo mkdir /etc/pacman.d/hooks
 	sudo rm -rf /etc/lsb-release 
-	sudo pacman-key --init			                    reinitiate the keyring
-	sudo pacman-key --populate archlinuxarm		            and install ALARM package signing keys
-	sudo pacman -Sy				                    sync the local repo’s
-	sudo pacman -S linux-pbp			            replace the Manjaro Kernel with Nadia Holmquists’s Kernel
+	sudo pacman-key --init			              reinitiate the keyring
+	sudo pacman-key --populate archlinuxarm		      and install ALARM package signing keys
+	sudo pacman -Sy				              sync the local repo’s
+	sudo pacman -S linux-pbp			      replace the Manjaro Kernel with Nadia Holmquists’s Kernel
 	sudo pacman -Syuu
 
 	sudo reboot
@@ -173,13 +173,13 @@ Now eject the eMMC module and install on Pinebook Pro computer board.
 #### 8.)  Install Wayland Display Server and Gnome Desktop Environment
 
 	sudo pacman -S wayland
-	sudo pacman -S gnome			                    select → ALL (just press ENTER), then select → 1 & 1
+	sudo pacman -S gnome			              select → ALL (just press ENTER), then select → 1 & 1
 	sudo systemctl enable gdm.service
 	sudo systemctl start gdm.service
 
 #### 9.)  Install Firefox
 
-	sudo pacman -S firefox firefox-extension-privacybadger firefox-ublock-origin	          select → 1 (GNU Fonts)
+	sudo pacman -S firefox firefox-extension-privacybadger firefox-ublock-origin	     select → 1 (GNU Fonts)
 
 	sudo reboot
 
